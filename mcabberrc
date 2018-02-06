@@ -1,0 +1,39 @@
+# General stuff
+set server = <SERVER>
+set username = <USERNAME>
+set jid = <JABBER-ID>
+set password = <PASSWORD>
+set lang = en
+set resource = AWI
+set priority = 5
+set ssl = 1
+set ssl_verify 0
+set ssl_ignore_checks = 1
+set ignore_self_presence = 1
+otrpolicy default plain
+
+# Logging
+set logging  = 1
+set logging_dir = ~/.mcabber/logs/
+set load_logs = 1
+set log_muc_conf = 1
+set load_muc_logs = 1
+
+# MUC
+set nickname <NICKNAME>
+## These colors will by used automatically:
+set nick_colors = green yellow white
+## This turns coloring of all mucs on:
+color muc * on
+
+# Alias
+alias me = say /me
+
+# [STRG + down] Scroll down the buffer
+bind 525= "buffer down"
+# [STRG + up] Scroll up the buffer
+bind 566= "buffer up"
+# F8 Away
+bind 272= "status away I'm currently away right now. That's all you need to know..."
+# F9 Online
+bind 273= "status online -"
